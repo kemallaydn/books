@@ -1,4 +1,4 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+Bu proje, bir kitap alım-satım uygulamasıdır. Uygulama üzerinde kitap alıp satabilir. Ürünleri favori listesine ekleyebilir,istekte bulunabilir,fiyatını takip edebilirsiniz.
 
 # Getting Started
 
