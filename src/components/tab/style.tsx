@@ -6,7 +6,7 @@ export default StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center',
         paddingVertical:'3%',
-        backgroundColor:'#3498db',
+        backgroundColor:'#804049',
         marginHorizontal:'5%',
         borderRadius:15,
       },
