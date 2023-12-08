@@ -10,5 +10,7 @@ export default StyleSheet.create({
         marginHorizontal:'5%',
         borderRadius:15,
       },
-      
+      text:{
+        color:'white'
+      }
 })

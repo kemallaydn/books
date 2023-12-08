@@ -17,6 +17,6 @@ export default StyleSheet.create({
     circle:{
         height:70,
         width:70,
-        marginHorizontal:10,
+        marginRight:20,
     }
 })

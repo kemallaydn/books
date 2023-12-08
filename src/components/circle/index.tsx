@@ -9,19 +9,19 @@ const Circle: React.FC<CardProps> = ({ data }) => {
         return (
             <TouchableOpacity style={styles.circle}>
                 <Image source={{ uri: item.resim }} style={styles.image} />
-                <Text style={{ textAlign: 'center' ,color:'black'}}>{item.konu}</Text>
+                <Text style={{ textAlign: 'center' ,color:'white'}}>{item.konu}</Text>
             </TouchableOpacity>
         );
     };
     return (
-        <View style={{borderTopWidth:1 }}>
+        <View style={{borderBottomColor:"white"}}>
             <FlatList
                 data={data}
                 renderItem={renderItem}
                 keyExtractor={({ id }) => id.toString()}
                 style={{borderBottomColor:'#804049',borderBottomWidth:0  }}
                 horizontal
-                contentContainerStyle={{ paddingHorizontal:'2%',paddingVertical:'2.3%', marginBottom: '2%' }}
+                contentContainerStyle={{ paddingVertical:'2.3%', marginBottom: '4%' }}
             />
         </View>
     );

@@ -4,11 +4,11 @@ import buttonModel from "../../models/button.model"
 import styles from "./style"
 import getSizeValue from '../../utils/getSizeValue';
 
-const Button: React.FC<buttonModel> = ({ onPress, title, style, size="md", ...props }) => {
+const Button: React.FC<buttonModel> = ({ onPress, title, style, size="md",textStyle, ...props }) => {
     const marginHorizontal = getSizeValue(size);
     return (
         <TouchableOpacity onPress={onPress} style={[styles.button,{marginHorizontal}, style]} {...props}>
-            <Text style={styles.buttonText}>{title}</Text>
+            <Text style={[styles.buttonText,textStyle]}>{title}</Text>
         </TouchableOpacity>
     );
 };

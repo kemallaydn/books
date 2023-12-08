@@ -6,5 +6,6 @@ interface ButtonProps extends TouchableOpacityProps {
     size?:Size;
     onPress?: () => void;
     style?: StyleProp<ViewStyle>;
+    textStyle?: StyleProp<TextStyle>;
   }
 export default ButtonProps;

@@ -9,20 +9,23 @@ const Card: React.FC<CardProps> = ({ data }) => {
             <View style={styles.container}>
                 <View style={styles.imageContent}>
                     <Image source={{ uri: item.resim }} style={styles.image} />
-                    <TouchableOpacity style={{position:'absolute', right:2,top:2}}>
-                        <Ionicons  name='heart-circle-outline' size={30} color="white" />
+                    <TouchableOpacity style={{position:'absolute',left:'45%',bottom:5}}>
+                        <Ionicons  name='add-circle-outline' size={25} color="white" />
                     </TouchableOpacity>
                 </View>
-                <View style={{flex:1}}>
-                    <Text style={styles.buttonText} numberOfLines={2}>{item.ad}</Text>
+                <View style={{flexDirection:'row',justifyContent:'space-between',paddingTop:'2%',marginHorizontal:'2%'}}> 
+                    <View>
+
+                    <Text style={styles.buttonText} ellipsizeMode="tail">{item.ad}</Text>
+                    <Text style={styles.buttonText}>{item.fiyat} TL</Text>
+                    </View>
+                    <View>
+                    <TouchableOpacity style={{}}>
+                        <Ionicons  name='heart-circle-outline' size={25} color="white" />
+                    </TouchableOpacity>
+                    </View>
                 </View>
-                <View style={{flex:1}}>
-                <Text style={styles.buttonText}>{item.fiyat}</Text>
-                </View>
-                <TouchableOpacity style={styles.footer}>
-                    <Ionicons  name='add' size={15} color="white" />
-                    <Text style={{color:'white'}}>Sepete Ekle</Text>
-                </TouchableOpacity>
+                
             </View>
         );
     };
@@ -32,6 +35,7 @@ const Card: React.FC<CardProps> = ({ data }) => {
             renderItem={renderItem}
             keyExtractor={({ id }) => id.toString()}
             numColumns={2}
+            
         />
     );
 };
